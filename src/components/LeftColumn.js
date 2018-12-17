@@ -2,19 +2,25 @@ import React, { Component } from "react";
 
 class LeftColumn extends Component {
   render() {
-    const { countries, handleSelectCountry } = this.props;
+    const { countries, handleSelectCountry, selectedCountry } = this.props;
     return (
       <div>
-        <h3>Countries</h3>
-        <div>
-          {countries.map(country => (
-            <div key={country}>
-              <button value={country} onClick={handleSelectCountry}>
+        <label>
+          <h3>Countries</h3>
+        </label>
+        <form>
+          <select
+            value={selectedCountry}
+            onChange={handleSelectCountry}
+            size="10"
+          >
+            {countries.map(country => (
+              <option key={country} value={country}>
                 {country}
-              </button>
-            </div>
-          ))}
-        </div>
+              </option>
+            ))}
+          </select>
+        </form>
       </div>
     );
   }

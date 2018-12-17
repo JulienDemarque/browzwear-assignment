@@ -53,12 +53,14 @@ class App extends Component {
       <div className="table-container">
         <div className="table-container__column">
           <LeftColumn
+            selectedCountry={selectedCountry}
             handleSelectCountry={this.handleSelectCountry}
             countries={countriesList}
           />
         </div>
         <div className="table-container__column">
           <MiddleColumn
+            selectedCity={selectedCity}
             handleSelectCity={this.handleSelectCity}
             cities={filteredCitiesList}
           />

@@ -2,19 +2,21 @@ import React, { Component } from "react";
 
 class MiddleColumn extends Component {
   render() {
-    const { cities, handleSelectCity } = this.props;
+    const { cities, handleSelectCity, selectedCity } = this.props;
     return (
       <div>
-        <h3>Cities</h3>
-        <div>
-          {cities.map(({ cityName }) => (
-            <div key={cityName}>
-              <button value={cityName} onClick={handleSelectCity}>
+        <label>
+          <h3>Cities</h3>
+        </label>
+        <form>
+          <select value={selectedCity} onChange={handleSelectCity} size="10">
+            {cities.map(({ cityName }) => (
+              <option key={cityName} value={cityName}>
                 {cityName}
-              </button>
-            </div>
-          ))}
-        </div>
+              </option>
+            ))}
+          </select>
+        </form>
       </div>
     );
   }
