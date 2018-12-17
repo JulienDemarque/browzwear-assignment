@@ -24,7 +24,7 @@ export function getData({ Customers }) {
     fromCity: customer.City
   }));
   // Remove duplicates
-  const companiesList = getUniqueListCompanies(companiesFullList);
+  const unsortedCompaniesList = getUniqueListCompanies(companiesFullList);
 
   // Sort the list of countries
   const countriesList = unsortedCountriesList.sort((countryA, countryB) => {
@@ -40,14 +40,44 @@ export function getData({ Customers }) {
 
   // Sort the list of cities
   const citiesList = unsortedCitiesList.sort((cityA, cityB) => {
-    const numberOfCompaniesInCityA = companiesList.filter(company => {
+    const numberOfCompaniesInCityA = unsortedCompaniesList.filter(company => {
       return company.fromCity === cityA.cityName;
     }).length;
-    const numberOfCompaniesInCityB = companiesList.filter(
+    const numberOfCompaniesInCityB = unsortedCompaniesList.filter(
       company => company.fromCity === cityB.cityName
     ).length;
     return numberOfCompaniesInCityB - numberOfCompaniesInCityA;
   });
 
-  return { countriesList, citiesList, companiesList };
+  // Sort the list of companies
+  const companiesList = unsortedCompaniesList.sort((companyA, companyB) => {
+    const nameA = companyA.companyName.toUpperCase(); // ignore upper and lowercase
+    const nameB = companyB.companyName.toUpperCase(); // ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    // names must be equal
+    return 0;
+  });
+
+  // Find default data
+  const firstCountry = countriesList[0];
+  const firstCity = citiesList.filter(city => {
+    return city.fromCountry === firstCountry;
+  })[0].cityName;
+  const firstCompany = companiesList.filter(company => {
+    return company.fromCity === firstCity;
+  })[0].companyName;
+
+  return {
+    countriesList,
+    citiesList,
+    companiesList,
+    firstCountry,
+    firstCity,
+    firstCompany
+  };
 }

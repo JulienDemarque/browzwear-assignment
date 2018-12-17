@@ -12,14 +12,22 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    const { countriesList, citiesList, companiesList } = getData(data);
+    const {
+      countriesList,
+      citiesList,
+      companiesList,
+      firstCountry,
+      firstCity,
+      firstCompany
+    } = getData(data);
 
     this.state = {
       countriesList,
       citiesList,
       companiesList,
-      selectedCountry: "",
-      selectedCity: ""
+      selectedCountry: firstCountry,
+      selectedCity: firstCity,
+      selectedCompany: firstCompany
     };
   }
 
@@ -33,13 +41,19 @@ class App extends Component {
     this.setState({ selectedCity });
   };
 
+  handleSelectCompany = e => {
+    const selectedCompany = e.target.value;
+    this.setState({ selectedCompany });
+  };
+
   render() {
     const {
       countriesList,
       citiesList,
       companiesList,
       selectedCity,
-      selectedCountry
+      selectedCountry,
+      selectedCompany
     } = this.state;
 
     const filteredCitiesList = citiesList.filter(city => {
@@ -66,7 +80,11 @@ class App extends Component {
           />
         </div>
         <div className="table-container__column">
-          <RightColumn companies={filteredCompaniesList} />
+          <RightColumn
+            selectedCompany={selectedCompany}
+            handleSelectCompany={this.handleSelectCompany}
+            companies={filteredCompaniesList}
+          />
         </div>
       </div>
     );
