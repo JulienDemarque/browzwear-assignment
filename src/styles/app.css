@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h3 {
+h3.column__title {
   font-weight: 400;
   padding: 10px 10px 5px 10px;
   border-bottom: 1px solid black;
@@ -11,53 +11,35 @@ h3 {
 
 .app-container {
   margin: 30px auto;
-  width: 1100px;
-  height: 350px;
+  width: 80vw;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
   padding: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .app-container {
+    width: 90vw;
+  }
 }
 
 .table-container {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+/*  columns  */
+
 .table-container__column {
-  flex-grow: 1;
   height: 100%;
+  height: 350px;
   display: flex;
   flex-direction: column;
 }
 
-/* Old CSS */
-.table-container__column select {
-  width: 200px;
-  outline-style: none;
-  border: none;
-}
-
-.table-container__column select > option:checked {
-  /* Not working! Can't be overriden :-/  */
-  background-color: rgb(0, 126, 246) !important;
-}
-
-.table-container__column select > option {
-  height: 50px;
-  padding: 15px;
-  margin: 2px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: rgb(0, 126, 246);
-  font-size: 1rem;
-  vertical-align: middle;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/*  Refactor styling  */
-/* -------------------------------- */
 .table-container__column ul {
   width: 200px;
   margin: 2px;
@@ -102,10 +84,13 @@ h3 {
   text-overflow: ellipsis;
 }
 
-/* -------------------------------- */
+/* Map */
+.table-container__column_map {
+  min-width: 250px;
+  flex-grow: 1;
+}
 
 .myGoogleMap {
-  width: 480px;
   margin: 0 10px 10px 10px;
 }
 

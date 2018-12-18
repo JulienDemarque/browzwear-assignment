@@ -5,7 +5,7 @@ class LeftColumn extends Component {
     const { countries, handleSelectCountry, selectedCountry } = this.props;
     return (
       <div className="table-container__column">
-        <h3>Countries</h3>
+        <h3 className="column__title">Countries</h3>
         <ul>
           {countries.map(country => (
             <li key={country}>

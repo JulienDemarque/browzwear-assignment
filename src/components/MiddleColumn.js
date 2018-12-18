@@ -5,7 +5,7 @@ class MiddleColumn extends Component {
     const { cities, handleSelectCity, selectedCity } = this.props;
     return (
       <div className="table-container__column">
-        <h3>Cities</h3>
+        <h3 className="column__title">Cities</h3>
         <ul>
           {cities.map(({ cityName }) => (
             <li key={cityName}>

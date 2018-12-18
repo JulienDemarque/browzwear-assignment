@@ -6,7 +6,7 @@ class RightColumn extends Component {
 
     return (
       <div className="table-container__column">
-        <h3>Company</h3>
+        <h3 className="column__title">Company</h3>
         <ul>
           {companies.map(({ companyName }) => (
             <li key={companyName}>

@@ -119,8 +119,8 @@ class App extends Component {
             handleSelectCompany={this.handleSelectCompany}
             companies={filteredCompaniesList}
           />
-          <div className="table-container__column">
-            <h3>Map</h3>
+          <div className="table-container__column table-container__column_map">
+            <h3 className="column__title">Map</h3>
             <div className="myGoogleMap">
               <MyMapComponent
                 location={location}
