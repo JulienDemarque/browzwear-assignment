@@ -69,6 +69,7 @@ h3.column__title {
   font-size: 1rem;
   vertical-align: middle;
   outline-style: none;
+  cursor: pointer;
 }
 
 .table-container__column ul li button.button_highlight {
