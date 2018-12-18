@@ -1,0 +1,3725 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeftColumn Component renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LeftColumn
+    countries={
+      Array [
+        "USA",
+        "Germany",
+        "France",
+        "Brazil",
+        "Venezuela",
+        "Spain",
+        "Canada",
+        "Italy",
+        "UK",
+        "Sweden",
+        "Switzerland",
+        "Austria",
+        "Belgium",
+        "Denmark",
+        "Finland",
+        "Mexico",
+        "Argentina",
+        "Portugal",
+        "Ireland",
+        "Norway",
+        "Poland",
+      ]
+    }
+    handleSelectCountry={[MockFunction]}
+    selectedCountry="USA"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="column__title"
+        >
+          Countries
+        </h3>,
+        <ul>
+          <li>
+            <button
+              className="button_highlight"
+              onClick={[MockFunction]}
+              value="USA"
+            >
+              <span>
+                 
+                USA
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Germany"
+            >
+              <span>
+                 
+                Germany
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="France"
+            >
+              <span>
+                 
+                France
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Brazil"
+            >
+              <span>
+                 
+                Brazil
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Venezuela"
+            >
+              <span>
+                 
+                Venezuela
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Spain"
+            >
+              <span>
+                 
+                Spain
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Canada"
+            >
+              <span>
+                 
+                Canada
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Italy"
+            >
+              <span>
+                 
+                Italy
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="UK"
+            >
+              <span>
+                 
+                UK
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Sweden"
+            >
+              <span>
+                 
+                Sweden
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Switzerland"
+            >
+              <span>
+                 
+                Switzerland
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Austria"
+            >
+              <span>
+                 
+                Austria
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Belgium"
+            >
+              <span>
+                 
+                Belgium
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Denmark"
+            >
+              <span>
+                 
+                Denmark
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Finland"
+            >
+              <span>
+                 
+                Finland
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Mexico"
+            >
+              <span>
+                 
+                Mexico
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Argentina"
+            >
+              <span>
+                 
+                Argentina
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Portugal"
+            >
+              <span>
+                 
+                Portugal
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Ireland"
+            >
+              <span>
+                 
+                Ireland
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Norway"
+            >
+              <span>
+                 
+                Norway
+              </span>
+               
+            </button>
+          </li>
+          <li>
+            <button
+              className=""
+              onClick={[MockFunction]}
+              value="Poland"
+            >
+              <span>
+                 
+                Poland
+              </span>
+               
+            </button>
+          </li>
+        </ul>,
+      ],
+      "className": "table-container__column",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Countries",
+          "className": "column__title",
+        },
+        "ref": null,
+        "rendered": "Countries",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <button
+                className="button_highlight"
+                onClick={[MockFunction]}
+                value="USA"
+              >
+                <span>
+                   
+                  USA
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Germany"
+              >
+                <span>
+                   
+                  Germany
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="France"
+              >
+                <span>
+                   
+                  France
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Brazil"
+              >
+                <span>
+                   
+                  Brazil
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Venezuela"
+              >
+                <span>
+                   
+                  Venezuela
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Spain"
+              >
+                <span>
+                   
+                  Spain
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Canada"
+              >
+                <span>
+                   
+                  Canada
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Italy"
+              >
+                <span>
+                   
+                  Italy
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="UK"
+              >
+                <span>
+                   
+                  UK
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Sweden"
+              >
+                <span>
+                   
+                  Sweden
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Switzerland"
+              >
+                <span>
+                   
+                  Switzerland
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Austria"
+              >
+                <span>
+                   
+                  Austria
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Belgium"
+              >
+                <span>
+                   
+                  Belgium
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Denmark"
+              >
+                <span>
+                   
+                  Denmark
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Finland"
+              >
+                <span>
+                   
+                  Finland
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Mexico"
+              >
+                <span>
+                   
+                  Mexico
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Argentina"
+              >
+                <span>
+                   
+                  Argentina
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Portugal"
+              >
+                <span>
+                   
+                  Portugal
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Ireland"
+              >
+                <span>
+                   
+                  Ireland
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Norway"
+              >
+                <span>
+                   
+                  Norway
+                </span>
+                 
+              </button>
+            </li>,
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Poland"
+              >
+                <span>
+                   
+                  Poland
+                </span>
+                 
+              </button>
+            </li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "USA",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="button_highlight"
+                onClick={[MockFunction]}
+                value="USA"
+              >
+                <span>
+                   
+                  USA
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    USA
+                  </span>,
+                  " ",
+                ],
+                "className": "button_highlight",
+                "onClick": [MockFunction],
+                "value": "USA",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "USA",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "USA",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Germany",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Germany"
+              >
+                <span>
+                   
+                  Germany
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Germany
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Germany",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Germany",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Germany",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "France",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="France"
+              >
+                <span>
+                   
+                  France
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    France
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "France",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "France",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "France",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Brazil",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Brazil"
+              >
+                <span>
+                   
+                  Brazil
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Brazil
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Brazil",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Brazil",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Brazil",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Venezuela",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Venezuela"
+              >
+                <span>
+                   
+                  Venezuela
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Venezuela
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Venezuela",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Venezuela",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Venezuela",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Spain",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Spain"
+              >
+                <span>
+                   
+                  Spain
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Spain
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Spain",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Spain",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Spain",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Canada",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Canada"
+              >
+                <span>
+                   
+                  Canada
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Canada
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Canada",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Canada",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Canada",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Italy",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Italy"
+              >
+                <span>
+                   
+                  Italy
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Italy
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Italy",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Italy",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Italy",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "UK",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="UK"
+              >
+                <span>
+                   
+                  UK
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    UK
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "UK",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "UK",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "UK",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Sweden",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Sweden"
+              >
+                <span>
+                   
+                  Sweden
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Sweden
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Sweden",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Sweden",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Sweden",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Switzerland",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Switzerland"
+              >
+                <span>
+                   
+                  Switzerland
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Switzerland
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Switzerland",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Switzerland",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Switzerland",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Austria",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Austria"
+              >
+                <span>
+                   
+                  Austria
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Austria
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Austria",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Austria",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Austria",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Belgium",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Belgium"
+              >
+                <span>
+                   
+                  Belgium
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Belgium
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Belgium",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Belgium",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Belgium",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Denmark",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Denmark"
+              >
+                <span>
+                   
+                  Denmark
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Denmark
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Denmark",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Denmark",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Denmark",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Finland",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Finland"
+              >
+                <span>
+                   
+                  Finland
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Finland
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Finland",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Finland",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Finland",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Mexico",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Mexico"
+              >
+                <span>
+                   
+                  Mexico
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Mexico
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Mexico",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Mexico",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Mexico",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Argentina",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Argentina"
+              >
+                <span>
+                   
+                  Argentina
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Argentina
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Argentina",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Argentina",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Argentina",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Portugal",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Portugal"
+              >
+                <span>
+                   
+                  Portugal
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Portugal
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Portugal",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Portugal",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Portugal",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Ireland",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Ireland"
+              >
+                <span>
+                   
+                  Ireland
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Ireland
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Ireland",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Ireland",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Ireland",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Norway",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Norway"
+              >
+                <span>
+                   
+                  Norway
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Norway
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Norway",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Norway",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Norway",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Poland",
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className=""
+                onClick={[MockFunction]}
+                value="Poland"
+              >
+                <span>
+                   
+                  Poland
+                </span>
+                 
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span>
+                     
+                    Poland
+                  </span>,
+                  " ",
+                ],
+                "className": "",
+                "onClick": [MockFunction],
+                "value": "Poland",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Poland",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Poland",
+                  ],
+                  "type": "span",
+                },
+                " ",
+              ],
+              "type": "button",
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="column__title"
+          >
+            Countries
+          </h3>,
+          <ul>
+            <li>
+              <button
+                className="button_highlight"
+                onClick={[MockFunction]}
+                value="USA"
+              >
+                <span>
+                   
+                  USA
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Germany"
+              >
+                <span>
+                   
+                  Germany
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="France"
+              >
+                <span>
+                   
+                  France
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Brazil"
+              >
+                <span>
+                   
+                  Brazil
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Venezuela"
+              >
+                <span>
+                   
+                  Venezuela
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Spain"
+              >
+                <span>
+                   
+                  Spain
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Canada"
+              >
+                <span>
+                   
+                  Canada
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Italy"
+              >
+                <span>
+                   
+                  Italy
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="UK"
+              >
+                <span>
+                   
+                  UK
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Sweden"
+              >
+                <span>
+                   
+                  Sweden
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Switzerland"
+              >
+                <span>
+                   
+                  Switzerland
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Austria"
+              >
+                <span>
+                   
+                  Austria
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Belgium"
+              >
+                <span>
+                   
+                  Belgium
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Denmark"
+              >
+                <span>
+                   
+                  Denmark
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Finland"
+              >
+                <span>
+                   
+                  Finland
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Mexico"
+              >
+                <span>
+                   
+                  Mexico
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Argentina"
+              >
+                <span>
+                   
+                  Argentina
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Portugal"
+              >
+                <span>
+                   
+                  Portugal
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Ireland"
+              >
+                <span>
+                   
+                  Ireland
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Norway"
+              >
+                <span>
+                   
+                  Norway
+                </span>
+                 
+              </button>
+            </li>
+            <li>
+              <button
+                className=""
+                onClick={[MockFunction]}
+                value="Poland"
+              >
+                <span>
+                   
+                  Poland
+                </span>
+                 
+              </button>
+            </li>
+          </ul>,
+        ],
+        "className": "table-container__column",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Countries",
+            "className": "column__title",
+          },
+          "ref": null,
+          "rendered": "Countries",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <button
+                  className="button_highlight"
+                  onClick={[MockFunction]}
+                  value="USA"
+                >
+                  <span>
+                     
+                    USA
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Germany"
+                >
+                  <span>
+                     
+                    Germany
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="France"
+                >
+                  <span>
+                     
+                    France
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Brazil"
+                >
+                  <span>
+                     
+                    Brazil
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Venezuela"
+                >
+                  <span>
+                     
+                    Venezuela
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Spain"
+                >
+                  <span>
+                     
+                    Spain
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Canada"
+                >
+                  <span>
+                     
+                    Canada
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Italy"
+                >
+                  <span>
+                     
+                    Italy
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="UK"
+                >
+                  <span>
+                     
+                    UK
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Sweden"
+                >
+                  <span>
+                     
+                    Sweden
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Switzerland"
+                >
+                  <span>
+                     
+                    Switzerland
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Austria"
+                >
+                  <span>
+                     
+                    Austria
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Belgium"
+                >
+                  <span>
+                     
+                    Belgium
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Denmark"
+                >
+                  <span>
+                     
+                    Denmark
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Finland"
+                >
+                  <span>
+                     
+                    Finland
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Mexico"
+                >
+                  <span>
+                     
+                    Mexico
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Argentina"
+                >
+                  <span>
+                     
+                    Argentina
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Portugal"
+                >
+                  <span>
+                     
+                    Portugal
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Ireland"
+                >
+                  <span>
+                     
+                    Ireland
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Norway"
+                >
+                  <span>
+                     
+                    Norway
+                  </span>
+                   
+                </button>
+              </li>,
+              <li>
+                <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Poland"
+                >
+                  <span>
+                     
+                    Poland
+                  </span>
+                   
+                </button>
+              </li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "USA",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="button_highlight"
+                  onClick={[MockFunction]}
+                  value="USA"
+                >
+                  <span>
+                     
+                    USA
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      USA
+                    </span>,
+                    " ",
+                  ],
+                  "className": "button_highlight",
+                  "onClick": [MockFunction],
+                  "value": "USA",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "USA",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "USA",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Germany",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Germany"
+                >
+                  <span>
+                     
+                    Germany
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Germany
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Germany",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Germany",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Germany",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "France",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="France"
+                >
+                  <span>
+                     
+                    France
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      France
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "France",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "France",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "France",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Brazil",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Brazil"
+                >
+                  <span>
+                     
+                    Brazil
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Brazil
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Brazil",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Brazil",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Brazil",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Venezuela",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Venezuela"
+                >
+                  <span>
+                     
+                    Venezuela
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Venezuela
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Venezuela",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Venezuela",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Venezuela",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Spain",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Spain"
+                >
+                  <span>
+                     
+                    Spain
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Spain
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Spain",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Spain",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Spain",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Canada",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Canada"
+                >
+                  <span>
+                     
+                    Canada
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Canada
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Canada",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Canada",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Canada",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Italy",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Italy"
+                >
+                  <span>
+                     
+                    Italy
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Italy
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Italy",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Italy",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Italy",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "UK",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="UK"
+                >
+                  <span>
+                     
+                    UK
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      UK
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "UK",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "UK",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "UK",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Sweden",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Sweden"
+                >
+                  <span>
+                     
+                    Sweden
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Sweden
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Sweden",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Sweden",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Sweden",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Switzerland",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Switzerland"
+                >
+                  <span>
+                     
+                    Switzerland
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Switzerland
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Switzerland",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Switzerland",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Switzerland",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Austria",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Austria"
+                >
+                  <span>
+                     
+                    Austria
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Austria
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Austria",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Austria",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Austria",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Belgium",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Belgium"
+                >
+                  <span>
+                     
+                    Belgium
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Belgium
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Belgium",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Belgium",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Belgium",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Denmark",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Denmark"
+                >
+                  <span>
+                     
+                    Denmark
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Denmark
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Denmark",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Denmark",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Denmark",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Finland",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Finland"
+                >
+                  <span>
+                     
+                    Finland
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Finland
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Finland",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Finland",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Finland",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Mexico",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Mexico"
+                >
+                  <span>
+                     
+                    Mexico
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Mexico
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Mexico",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Mexico",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Mexico",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Argentina",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Argentina"
+                >
+                  <span>
+                     
+                    Argentina
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Argentina
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Argentina",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Argentina",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Argentina",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Portugal",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Portugal"
+                >
+                  <span>
+                     
+                    Portugal
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Portugal
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Portugal",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Portugal",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Portugal",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Ireland",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Ireland"
+                >
+                  <span>
+                     
+                    Ireland
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Ireland
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Ireland",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Ireland",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Ireland",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Norway",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Norway"
+                >
+                  <span>
+                     
+                    Norway
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Norway
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Norway",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Norway",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Norway",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Poland",
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className=""
+                  onClick={[MockFunction]}
+                  value="Poland"
+                >
+                  <span>
+                     
+                    Poland
+                  </span>
+                   
+                </button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                       
+                      Poland
+                    </span>,
+                    " ",
+                  ],
+                  "className": "",
+                  "onClick": [MockFunction],
+                  "value": "Poland",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Poland",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Poland",
+                    ],
+                    "type": "span",
+                  },
+                  " ",
+                ],
+                "type": "button",
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

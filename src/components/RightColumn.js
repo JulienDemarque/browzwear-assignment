@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class RightColumn extends Component {
   render() {
     const { companies, selectedCompany, handleSelectCompany } = this.props;
-
     return (
       <div className="table-container__column">
         <h3 className="column__title">Company</h3>
