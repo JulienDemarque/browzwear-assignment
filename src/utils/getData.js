@@ -1,8 +1,4 @@
-import {
-  getUniqueList,
-  getUniqueListCities,
-  getUniqueListCompanies
-} from "./avoidDuplicate";
+import { getUniqueList, getUniqueListWithKeyword } from "./avoidDuplicate";
 
 export function getData({ Customers }) {
   // Get the list of countries
@@ -16,7 +12,10 @@ export function getData({ Customers }) {
     fromCountry: customer.Country
   }));
   // Remove duplicates
-  const unsortedCitiesList = getUniqueListCities(citiesFullList);
+  const unsortedCitiesList = getUniqueListWithKeyword(
+    citiesFullList,
+    "cityName"
+  );
 
   // Get the list of companies
   const companiesFullList = Customers.map(customer => ({
@@ -24,7 +23,10 @@ export function getData({ Customers }) {
     fromCity: customer.City
   }));
   // Remove duplicates
-  const unsortedCompaniesList = getUniqueListCompanies(companiesFullList);
+  const unsortedCompaniesList = getUniqueListWithKeyword(
+    companiesFullList,
+    "companyName"
+  );
 
   // Sort the list of countries
   const countriesList = unsortedCountriesList.sort((countryA, countryB) => {

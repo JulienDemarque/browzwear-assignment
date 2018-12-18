@@ -11,7 +11,11 @@ class MiddleColumn extends Component {
         <form>
           <select value={selectedCity} onChange={handleSelectCity} size="6">
             {cities.map(({ cityName }) => (
-              <option key={cityName} value={cityName}>
+              <option
+                key={cityName}
+                onClick={handleSelectCity}
+                value={cityName}
+              >
                 {cityName}
               </option>
             ))}

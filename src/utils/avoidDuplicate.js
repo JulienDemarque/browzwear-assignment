@@ -1,4 +1,4 @@
-// General helper function
+// General helper functions
 export function getUniqueList(list) {
   var seen = {};
   return list.filter(function(item) {
@@ -6,21 +6,11 @@ export function getUniqueList(list) {
   });
 }
 
-//WE CAN REFACTOR THESE 2 HELPERS INTO  1 BY PASSING THE KEY NAME
-// Custom helper function to accomodate citiesFullList data structure
-export function getUniqueListCities(list) {
+export function getUniqueListWithKeyword(list, keySearch) {
   var seen = {};
-  return list.filter(function({ cityName }) {
-    return seen.hasOwnProperty(cityName) ? false : (seen[cityName] = true);
-  });
-}
-
-// Custom helper function to accomodate companiesFullList data structure
-export function getUniqueListCompanies(list) {
-  var seen = {};
-  return list.filter(function({ companyName }) {
-    return seen.hasOwnProperty(companyName)
+  return list.filter(function(item) {
+    return seen.hasOwnProperty(item[keySearch])
       ? false
-      : (seen[companyName] = true);
+      : (seen[item[keySearch]] = true);
   });
 }

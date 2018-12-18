@@ -18,17 +18,6 @@ Geocode.setApiKey(process.env.REACT_APP_GOOGLEMAP_KEY);
 // Enable or disable logs. Its optional.
 Geocode.enableDebug();
 
-// Get latidude & longitude from address.
-Geocode.fromAddress("Eiffel Tower").then(
-  response => {
-    const { lat, lng } = response.results[0].geometry.location;
-    console.log(lat, lng);
-  },
-  error => {
-    console.error(error);
-  }
-);
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +39,8 @@ class App extends Component {
       selectedCountry: firstCountry,
       selectedCity: firstCity,
       selectedCompany: firstCompany,
-      location: { lat: 0, lng: 0 }
+      location: { lat: 0, lng: 0 },
+      currentCompanyAddress: ""
     };
   }
 
@@ -60,19 +50,16 @@ class App extends Component {
 
   changeLocation() {
     const { fullList, selectedCompany } = this.state;
-
-    //console.log(selectedCompany);
     const currentCompany = fullList.find(company => {
       return company.CompanyName === selectedCompany;
     });
     const { Address, City, PostalCode, Country } = currentCompany;
     const currentCompanyAddress = `${Address} ${City} ${PostalCode} ${Country}`;
-    console.log(currentCompanyAddress);
-    // Get latidude & longitude from address.
+    // Get latidude & longitude from address
     Geocode.fromAddress(currentCompanyAddress).then(
       response => {
         const { lat, lng } = response.results[0].geometry.location;
-        this.setState({ location: { lat, lng } });
+        this.setState({ location: { lat, lng }, currentCompanyAddress });
       },
       error => {
         console.error(error);
@@ -92,19 +79,19 @@ class App extends Component {
 
   handleSelectCompany = e => {
     const selectedCompany = e.target.value;
-    console.log("heyyyyyyyyy");
     this.setState({ selectedCompany }, this.changeLocation);
   };
 
   render() {
     const {
-      fullList,
       countriesList,
       citiesList,
       companiesList,
       selectedCity,
       selectedCountry,
-      selectedCompany
+      selectedCompany,
+      location,
+      currentCompanyAddress
     } = this.state;
 
     const filteredCitiesList = citiesList.filter(city => {
@@ -142,7 +129,8 @@ class App extends Component {
             <h3>Map</h3>
             <div className="myGoogleMap">
               <MyMapComponent
-                location={this.state.location}
+                location={location}
+                currentCompanyAddress={currentCompanyAddress}
                 isMarkerShown
                 googleMapURL={
                   "https://maps.googleapis.com/maps/api/js?key=" +
