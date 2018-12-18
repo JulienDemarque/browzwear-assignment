@@ -1,12 +1,33 @@
 import React, { Component } from "react";
+import Geocode from "react-geocode";
+
 import LeftColumn from "./LeftColumn";
 import MiddleColumn from "./MiddleColumn";
 import RightColumn from "./RightColumn";
+import MyMapComponent from "./MyMapComponent";
 import "../styles/app.css";
 
 import data from "../data/clients.json";
 
 import { getData } from "../utils/getData";
+
+require("dotenv").config();
+
+// set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
+Geocode.setApiKey(process.env.REACT_APP_GOOGLEMAP_KEY);
+// Enable or disable logs. Its optional.
+Geocode.enableDebug();
+
+// Get latidude & longitude from address.
+Geocode.fromAddress("Eiffel Tower").then(
+  response => {
+    const { lat, lng } = response.results[0].geometry.location;
+    console.log(lat, lng);
+  },
+  error => {
+    console.error(error);
+  }
+);
 
 class App extends Component {
   constructor(props) {
@@ -22,13 +43,41 @@ class App extends Component {
     } = getData(data);
 
     this.state = {
+      fullList: data.Customers,
       countriesList,
       citiesList,
       companiesList,
       selectedCountry: firstCountry,
       selectedCity: firstCity,
-      selectedCompany: firstCompany
+      selectedCompany: firstCompany,
+      location: { lat: 0, lng: 0 }
     };
+  }
+
+  componentDidMount() {
+    this.changeLocation();
+  }
+
+  changeLocation() {
+    const { fullList, selectedCompany } = this.state;
+
+    //console.log(selectedCompany);
+    const currentCompany = fullList.find(company => {
+      return company.CompanyName === selectedCompany;
+    });
+    const { Address, City, PostalCode, Country } = currentCompany;
+    const currentCompanyAddress = `${Address} ${City} ${PostalCode} ${Country}`;
+    console.log(currentCompanyAddress);
+    // Get latidude & longitude from address.
+    Geocode.fromAddress(currentCompanyAddress).then(
+      response => {
+        const { lat, lng } = response.results[0].geometry.location;
+        this.setState({ location: { lat, lng } });
+      },
+      error => {
+        console.error(error);
+      }
+    );
   }
 
   handleSelectCountry = e => {
@@ -43,11 +92,13 @@ class App extends Component {
 
   handleSelectCompany = e => {
     const selectedCompany = e.target.value;
-    this.setState({ selectedCompany });
+    console.log("heyyyyyyyyy");
+    this.setState({ selectedCompany }, this.changeLocation);
   };
 
   render() {
     const {
+      fullList,
       countriesList,
       citiesList,
       companiesList,
@@ -64,27 +115,46 @@ class App extends Component {
     });
 
     return (
-      <div className="table-container">
-        <div className="table-container__column">
-          <LeftColumn
-            selectedCountry={selectedCountry}
-            handleSelectCountry={this.handleSelectCountry}
-            countries={countriesList}
-          />
-        </div>
-        <div className="table-container__column">
-          <MiddleColumn
-            selectedCity={selectedCity}
-            handleSelectCity={this.handleSelectCity}
-            cities={filteredCitiesList}
-          />
-        </div>
-        <div className="table-container__column">
-          <RightColumn
-            selectedCompany={selectedCompany}
-            handleSelectCompany={this.handleSelectCompany}
-            companies={filteredCompaniesList}
-          />
+      <div className="app-container">
+        <div className="table-container">
+          <div className="table-container__column">
+            <LeftColumn
+              selectedCountry={selectedCountry}
+              handleSelectCountry={this.handleSelectCountry}
+              countries={countriesList}
+            />
+          </div>
+          <div className="table-container__column">
+            <MiddleColumn
+              selectedCity={selectedCity}
+              handleSelectCity={this.handleSelectCity}
+              cities={filteredCitiesList}
+            />
+          </div>
+          <div className="table-container__column">
+            <RightColumn
+              selectedCompany={selectedCompany}
+              handleSelectCompany={this.handleSelectCompany}
+              companies={filteredCompaniesList}
+            />
+          </div>
+          <div className="table-container__column">
+            <h3>Map</h3>
+            <div className="myGoogleMap">
+              <MyMapComponent
+                location={this.state.location}
+                isMarkerShown
+                googleMapURL={
+                  "https://maps.googleapis.com/maps/api/js?key=" +
+                  process.env.REACT_APP_GOOGLEMAP_KEY +
+                  "&v=3.exp&libraries=geometry,drawing,places"
+                }
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={<div style={{ height: `300px` }} />}
+                mapElement={<div style={{ height: `100%` }} />}
+              />
+            </div>
+          </div>
         </div>
       </div>
     );

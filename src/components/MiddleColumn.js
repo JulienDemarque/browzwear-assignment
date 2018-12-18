@@ -9,7 +9,7 @@ class MiddleColumn extends Component {
           <h3>Cities</h3>
         </label>
         <form>
-          <select value={selectedCity} onChange={handleSelectCity} size="10">
+          <select value={selectedCity} onChange={handleSelectCity} size="6">
             {cities.map(({ cityName }) => (
               <option key={cityName} value={cityName}>
                 {cityName}

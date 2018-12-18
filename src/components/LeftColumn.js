@@ -12,7 +12,7 @@ class LeftColumn extends Component {
           <select
             value={selectedCountry}
             onChange={handleSelectCountry}
-            size="10"
+            size="6"
           >
             {countries.map(country => (
               <option key={country} value={country}>

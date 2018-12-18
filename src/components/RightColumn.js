@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class RightColumn extends Component {
   render() {
-    const { companies, selectedCountry, handleSelectCountry } = this.props;
+    const { companies, selectedCompany, handleSelectCompany } = this.props;
     return (
       <div>
         <form>
@@ -10,12 +10,18 @@ class RightColumn extends Component {
             <h3>Company</h3>
           </label>
           <select
-            size="10"
-            value={selectedCountry}
-            onChange={handleSelectCountry}
+            size="6"
+            value={selectedCompany}
+            onChange={handleSelectCompany}
           >
             {companies.map(({ companyName }) => (
-              <option key={companyName}>{companyName}</option>
+              <option
+                onClick={handleSelectCompany}
+                value={companyName}
+                key={companyName}
+              >
+                {companyName}
+              </option>
             ))}
           </select>
         </form>
