@@ -3,28 +3,25 @@ import React, { Component } from "react";
 class RightColumn extends Component {
   render() {
     const { companies, selectedCompany, handleSelectCompany } = this.props;
+
     return (
-      <div>
-        <form>
-          <label>
-            <h3>Company</h3>
-          </label>
-          <select
-            size="6"
-            value={selectedCompany}
-            onChange={handleSelectCompany}
-          >
-            {companies.map(({ companyName }) => (
-              <option
+      <div className="table-container__column">
+        <h3>Company</h3>
+        <ul>
+          {companies.map(({ companyName }) => (
+            <li key={companyName}>
+              <button
+                className={
+                  companyName === selectedCompany ? "button_highlight" : ""
+                }
                 onClick={handleSelectCompany}
                 value={companyName}
-                key={companyName}
               >
-                {companyName}
-              </option>
-            ))}
-          </select>
-        </form>
+                <span>{companyName}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

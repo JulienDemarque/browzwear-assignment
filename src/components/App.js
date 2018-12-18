@@ -53,8 +53,8 @@ class App extends Component {
     const currentCompany = fullList.find(company => {
       return company.CompanyName === selectedCompany;
     });
-    const { Address, City, PostalCode, Country } = currentCompany;
-    const currentCompanyAddress = `${Address} ${City} ${PostalCode} ${Country}`;
+    const { Address, City } = currentCompany;
+    const currentCompanyAddress = `${Address} ${City}`;
     // Get latidude & longitude from address
     Geocode.fromAddress(currentCompanyAddress).then(
       response => {
@@ -68,17 +68,17 @@ class App extends Component {
   }
 
   handleSelectCountry = e => {
-    const selectedCountry = e.target.value;
+    const selectedCountry = e.currentTarget.value;
     this.setState({ selectedCountry });
   };
 
   handleSelectCity = e => {
-    const selectedCity = e.target.value;
+    const selectedCity = e.currentTarget.value;
     this.setState({ selectedCity });
   };
 
   handleSelectCompany = e => {
-    const selectedCompany = e.target.value;
+    const selectedCompany = e.currentTarget.value;
     this.setState({ selectedCompany }, this.changeLocation);
   };
 
@@ -104,27 +104,21 @@ class App extends Component {
     return (
       <div className="app-container">
         <div className="table-container">
-          <div className="table-container__column">
-            <LeftColumn
-              selectedCountry={selectedCountry}
-              handleSelectCountry={this.handleSelectCountry}
-              countries={countriesList}
-            />
-          </div>
-          <div className="table-container__column">
-            <MiddleColumn
-              selectedCity={selectedCity}
-              handleSelectCity={this.handleSelectCity}
-              cities={filteredCitiesList}
-            />
-          </div>
-          <div className="table-container__column">
-            <RightColumn
-              selectedCompany={selectedCompany}
-              handleSelectCompany={this.handleSelectCompany}
-              companies={filteredCompaniesList}
-            />
-          </div>
+          <LeftColumn
+            selectedCountry={selectedCountry}
+            handleSelectCountry={this.handleSelectCountry}
+            countries={countriesList}
+          />
+          <MiddleColumn
+            selectedCity={selectedCity}
+            handleSelectCity={this.handleSelectCity}
+            cities={filteredCitiesList}
+          />
+          <RightColumn
+            selectedCompany={selectedCompany}
+            handleSelectCompany={this.handleSelectCompany}
+            companies={filteredCompaniesList}
+          />
           <div className="table-container__column">
             <h3>Map</h3>
             <div className="myGoogleMap">

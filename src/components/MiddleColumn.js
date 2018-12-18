@@ -4,23 +4,21 @@ class MiddleColumn extends Component {
   render() {
     const { cities, handleSelectCity, selectedCity } = this.props;
     return (
-      <div>
-        <label>
-          <h3>Cities</h3>
-        </label>
-        <form>
-          <select value={selectedCity} onChange={handleSelectCity} size="6">
-            {cities.map(({ cityName }) => (
-              <option
-                key={cityName}
+      <div className="table-container__column">
+        <h3>Cities</h3>
+        <ul>
+          {cities.map(({ cityName }) => (
+            <li key={cityName}>
+              <button
+                className={cityName === selectedCity ? "button_highlight" : ""}
                 onClick={handleSelectCity}
                 value={cityName}
               >
-                {cityName}
-              </option>
-            ))}
-          </select>
-        </form>
+                <span> {cityName}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

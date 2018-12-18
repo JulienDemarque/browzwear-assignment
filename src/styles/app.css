@@ -26,8 +26,12 @@ h3 {
 
 .table-container__column {
   flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Old CSS */
 .table-container__column select {
   width: 200px;
   outline-style: none;
@@ -51,6 +55,54 @@ h3 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/*  Refactor styling  */
+/* -------------------------------- */
+.table-container__column ul {
+  width: 200px;
+  margin: 2px;
+  padding: 0;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.table-container__column ul > li:checked {
+  /* Not working! Can't be overriden :-/  */
+  background-color: rgb(0, 126, 246) !important;
+}
+
+.table-container__column ul > li {
+  height: 50px;
+  display: block;
+}
+
+.table-container__column ul li button {
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  color: rgb(0, 126, 246);
+  font-size: 1rem;
+  vertical-align: middle;
+  outline-style: none;
+}
+
+.table-container__column ul li button.button_highlight {
+  background-color: rgb(0, 126, 246);
+  color: white;
+}
+
+.table-container__column ul li button span {
+  display: block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* -------------------------------- */
 
 .myGoogleMap {
   width: 480px;

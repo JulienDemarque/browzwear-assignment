@@ -10,7 +10,7 @@ const {
 const MyMapComponent = withScriptjs(
   withGoogleMap(props => {
     return (
-      <GoogleMap defaultZoom={11} center={props.location}>
+      <GoogleMap defaultZoom={15} center={props.location}>
         {props.isMarkerShown && (
           <MarkerWithLabel
             position={props.location}
